@@ -1,0 +1,121 @@
+body {
+    background-color: #e3f2fd;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+    min-height: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* 地図っぽく右上に北海道を行かせるために少し工夫してもいいですが、
+       今回はスマホでも見やすいようにリニアに並べつつ、並び順で地図感を出します */
+}
+
+/* 各地域のコンテナ */
+.region {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid #90caf9;
+}
+
+/* 地域ごとの色分け */
+.hokkaido {
+    background-color: #e1bee7;
+}
+
+/* 紫 */
+.tohoku {
+    background-color: #c5cae9;
+}
+
+/* 青紫 */
+.kanto {
+    background-color: #b3e5fc;
+}
+
+/* 青 */
+.chubu {
+    background-color: #b2dfdb;
+}
+
+/* 青緑 */
+.kansai {
+    background-color: #c8e6c9;
+}
+
+/* 緑 */
+.chugoku {
+    background-color: #f0f4c3;
+}
+
+/* 黄緑 */
+.shikoku {
+    background-color: #fff9c4;
+}
+
+/* 黄 */
+.kyushu {
+    background-color: #ffe0b2;
+}
+
+/* オレンジ */
+
+.main-island {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.west-japan {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #ffeb3b;
+    transform: translateY(-2px);
+}
+
+.okinawa {
+    background-color: #ffccbc;
+    margin-left: 20px;
+    border: 2px dashed #ff5722;
+}

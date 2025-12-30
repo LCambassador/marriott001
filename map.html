@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マリオットホテルMap</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>都道府県別マリオットホテル</h1>
+        <div id="result">県名をクリックしてホテルを表示！</div>
+
+        <div class="map-wrapper">
+            <!-- 北から順に地域を並べます -->
+            <div class="region hokkaido">
+                <button onclick="check('北海道')">北海道</button>
+            </div>
+
+            <div class="region tohoku">
+                <button onclick="check('青森')">青森</button>
+                <button onclick="check('岩手')">岩手</button>
+                <button onclick="check('宮城')">宮城</button>
+                <button onclick="check('秋田')">秋田</button>
+                <button onclick="check('山形')">山形</button>
+                <button onclick="check('福島')">福島</button>
+            </div>
+
+            <div class="main-island">
+                <div class="region kanto">
+                    <button onclick="check('茨城')">茨城</button>
+                    <button onclick="check('栃木')">栃木</button>
+                    <button onclick="check('群馬')">群馬</button>
+                    <button onclick="check('埼玉')">埼玉</button>
+                    <button onclick="check('千葉')">千葉</button>
+                    <button onclick="check('東京')">東京</button>
+                    <button onclick="check('神奈川')">神奈川</button>
+                </div>
+
+                <div class="region chubu">
+                    <button onclick="check('新潟')">新潟</button>
+                    <button onclick="check('富山')">富山</button>
+                    <button onclick="check('石川')">石川</button>
+                    <button onclick="check('福井')">福井</button>
+                    <button onclick="check('山梨')">山梨</button>
+                    <button onclick="check('長野')">長野</button>
+                    <button onclick="check('岐阜')">岐阜</button>
+                    <button onclick="check('静岡')">静岡</button>
+                    <button onclick="check('愛知')">愛知</button>
+                </div>
+
+                <div class="region kansai">
+                    <button onclick="check('三重')">三重</button>
+                    <button onclick="check('滋賀')">滋賀</button>
+                    <button onclick="check('京都')">京都</button>
+                    <button onclick="check('大阪')">大阪</button>
+                    <button onclick="check('兵庫')">兵庫</button>
+                    <button onclick="check('奈良')">奈良</button>
+                    <button onclick="check('和歌山')">和歌山</button>
+                </div>
+            </div>
+
+            <div class="west-japan">
+                <div class="region chugoku">
+                    <button onclick="check('鳥取')">鳥取</button>
+                    <button onclick="check('島根')">島根</button>
+                    <button onclick="check('岡山')">岡山</button>
+                    <button onclick="check('広島')">広島</button>
+                    <button onclick="check('山口')">山口</button>
+                </div>
+
+                <div class="region shikoku">
+                    <button onclick="check('徳島')">徳島</button>
+                    <button onclick="check('香川')">香川</button>
+                    <button onclick="check('愛媛')">愛媛</button>
+                    <button onclick="check('高知')">高知</button>
+                </div>
+            </div>
+
+            <div class="region kyushu">
+                <button onclick="check('福岡')">福岡</button>
+                <button onclick="check('佐賀')">佐賀</button>
+                <button onclick="check('長崎')">長崎</button>
+                <button onclick="check('熊本')">熊本</button>
+                <button onclick="check('大分')">大分</button>
+                <button onclick="check('宮崎')">宮崎</button>
+                <button onclick="check('鹿児島')">鹿児島</button>
+                <button class="okinawa" onclick="check('沖縄')">沖縄</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="map.js"></script>
+</body>
+
+</html>
